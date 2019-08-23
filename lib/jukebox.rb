@@ -39,7 +39,7 @@ def play(songs)
     end
     
   end
-      puts "Invalid input, please try again" if status 
+      puts "Invalid input, please try again" if !status 
 end
 
 def exit_juckbox
