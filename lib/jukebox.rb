@@ -20,7 +20,9 @@ def help
 end
 
 def list(songs)
-  songs.each do (index,value)
+  num = 1
+  while songs.length >= num do
     
+    puts ""
   end
 end
