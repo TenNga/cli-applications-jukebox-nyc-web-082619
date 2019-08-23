@@ -32,7 +32,7 @@ def play(songs)
   input = gets.strip
   songs.each_with_index do |index,value|
     
-    if input.to_i == (index + 1).to_i || input.to_s == value.to_s
+    if input.to_i == index + 1 || input.to_s == value
       puts "Playing #{value}"
     end
     
