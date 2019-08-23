@@ -49,7 +49,7 @@ end
 def run 
   while(true) do 
     puts "Please enter a command:"
-    input = gets.strip
+    input = gets.strip.to_s
     
     case input
       when "help"
