@@ -23,6 +23,9 @@ def list(songs)
   num = 1
   while songs.length >= num do
     
-    puts ""
+    puts num.to_s + ". " + songs[num-1]
+    num += 1 
+    
   end
 end
+
