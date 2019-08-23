@@ -60,9 +60,11 @@ def run
         play(songs)
       when "exit"
         exit_juckbox()
+        break
       else 
         "Wrong commands"
     end
+  end
 end
 
 
