@@ -28,6 +28,8 @@ def list(songs)
     
   end
   
-  songs.each_with_index
+  songs.each_with_index do |index,value|
+    puts "#{index + 1}. #{value}"
+  end
 end
 
