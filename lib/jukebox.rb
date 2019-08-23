@@ -27,5 +27,7 @@ def list(songs)
     num += 1 
     
   end
+  
+  songs.each_with_index
 end
 
