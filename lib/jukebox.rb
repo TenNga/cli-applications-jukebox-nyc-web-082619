@@ -34,11 +34,10 @@ def play(songs)
     
     if input == index + 1 || input == value
       puts "Playing #{value}"
-    else
-      puts "Invalid input, please try again"
     end
     
   end
+      puts "Invalid input, please try again"
 end
 
 def exit_juckbox
