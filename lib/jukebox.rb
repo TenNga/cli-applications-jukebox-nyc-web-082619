@@ -47,21 +47,22 @@ def exit_jukebox
 end
 
 def run 
-  puts "Please enter a command:"
-  input = gets.strip
-  
-  case input
-    when "help"
-      help()
-    when "list"
-      list(songs)
-    when "play"
-      play(songs)
-    when "exit"
-      exit_juckbox()
-    else 
-      "Wrong commands"
-  end
+  while(true) do 
+    puts "Please enter a command:"
+    input = gets.strip
+    
+    case input
+      when "help"
+        help()
+      when "list"
+        list(songs)
+      when "play"
+        play(songs)
+      when "exit"
+        exit_juckbox()
+      else 
+        "Wrong commands"
+    end
 end
 
 
