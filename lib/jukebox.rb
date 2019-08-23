@@ -20,16 +20,33 @@ def help
 end
 
 def list(songs)
-  num = 1
-  while songs.length >= num do
-    
-    puts num.to_s + ". " + songs[num-1]
-    num += 1 
-    
-  end
   
   songs.each_with_index do |index,value|
     puts "#{index + 1}. #{value}"
   end
+  
 end
+
+def play(songs) 
+  puts "Please enter a song name or number:"
+  input = gets.strip
+  songs.each_with_index do |index,value|
+    if input == index + 1 || input == value
+      puts "Playing #{value}"
+    else
+      puts "Invalid input, please try again"
+    end
+  end
+end
+
+def exit_juckbox
+  puts "Goodbye"
+end
+
+def run 
+  puts "Please enter a command:"
+  input = gets.strip
+  
+end
+
 
