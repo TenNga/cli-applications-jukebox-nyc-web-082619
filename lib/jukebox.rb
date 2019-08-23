@@ -59,7 +59,7 @@ def run
       when "play"
         play(songs)
       when "exit"
-        exit_juckbox()
+        exit_jukebox()
         break
       else 
         "Wrong commands"
